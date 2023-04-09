@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic tac toe</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body class="bg-center bg-cover bg-no-repeat h-[100vh]" style="background-image: url(gamekbg_generated.jpg);">
+    <nav class="h-15 flex items-center justify-center">
+        <ul class="flex justify-between w-[95%] items-center">
+        
+            <li class="font-bold text-3xl text-white">code by zahid</li>
+            <a class="text-white font-bold text-3xl hover:text-blue-600 hover:border border-white border-dashed p-2" href="http://codebyzahid.com" target="_blank" rel="noopener noreferrer">Website</a>
+        </ul>
+    </nav>
+    <div class="w-100% flex justify-center items-center h-[80vh] flex-col gap-5">
+        <div class="font-bold text-3xl text-white">WELCOME TO Tic Tac Toe Game</div>
+        <div class="font-bold text-3xl text-white">Turn for <span id="turn">X</span></div>
+        <button onclick="reset()" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Reset</button>
+        <div class="w-[400px] h-[400px] grid grid-cols-3 grid-rows-3">
+            <div class="box border-2 hover:cursor-pointer hover:bg-slate-500 flex justify-center items-center"><span class="box-text text-5xl text-white font-extrabold"></span></div>
+            <div class="box border-2 hover:cursor-pointer hover:bg-slate-500 flex justify-center items-center"><span class="box-text text-5xl text-white font-extrabold"></span></div>
+            <div class="box border-2 hover:cursor-pointer hover:bg-slate-500 flex justify-center items-center"><span class="box-text text-5xl text-white font-extrabold"></span></div>
+            <div class="box border-2 hover:cursor-pointer hover:bg-slate-500 flex justify-center items-center"><span class="box-text text-5xl text-white font-extrabold"></span></div>
+            <div class="box border-2 hover:cursor-pointer hover:bg-slate-500 flex justify-center items-center"><span class="box-text text-5xl text-white font-extrabold"></span></div>
+            <div class="box border-2 hover:cursor-pointer hover:bg-slate-500 flex justify-center items-center"><span class="box-text text-5xl text-white font-extrabold"></span></div>
+            <div class="box border-2 hover:cursor-pointer hover:bg-slate-500 flex justify-center items-center"><span class="box-text text-5xl text-white font-extrabold"></span></div>
+            <div class="box border-2 hover:cursor-pointer hover:bg-slate-500 flex justify-center items-center"><span class="box-text text-5xl text-white font-extrabold"></span></div>
+            <div class="box border-2 hover:cursor-pointer hover:bg-slate-500 flex justify-center items-center"><span class="box-text text-5xl text-white font-extrabold"></span></div>
+        </div>
+    </div>
+    <div id="showwin" class="absolute top-0 z-10 w-[100vw] h-[100vh] bg-black justify-center items-center flex-col gap-10 hidden">
+        <img src="excited.gif" alt="img">
+        <div id="draw" class="font-bold text-3xl text-white">&nbsp; &nbsp; &nbsp;PLAYER <span id="playerwin"></span> WINS</div>
+        <div class="font-bold text-3xl text-white">Game will be start in 3</div>
+    </div>
+    <script src="operation.js"></script>
+</body>
+</html>
